@@ -1,0 +1,390 @@
+<!DOCTYPE HTML>
+<HTML lang="pt-BR">
+	<head>
+    	<!-- Meta Data -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Documentação Modelo MVC</title>
+        <meta name="description" content="Documentação Modelo MVC"/>
+        <meta name="keywords" content="HTML5, Bootstrap 3, CSS3, javascript, PHP, onepage, responsive, mobile"/>
+        <meta name="author" content="Proideas Agência Digital"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+       	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+ 
+        <!-- Stlylesheet -->
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <link href="css/documentation.css" rel="stylesheet" type="text/css" />
+        <!-- Skin Color -->
+        <link rel="stylesheet" href="css/colors/purple.css" id="color-skins"/>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        
+	</head>
+	<body>
+        
+        <!--Start Header-->
+        <header>
+			<nav class="navbar navbar-default navbar-alt" role="navigation">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					    </button>
+                        <a class="navbar-brand" id="to-top" rel="home" href="#">
+                            Proideas
+                        	<!-- <img class="logo-big" src="img/assets/logo-white.png"/>
+                            <img class="logo-small" src="img/assets/logo-dark.png"/> -->
+                        </a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+                    <!-- <div class="collapse navbar-collapse" id="main-nav">
+                        <ul class="nav navbar-nav  navbar-right">
+                            
+                            <li><a id="to-top">Top</a></li>
+                            <li><a href="http://themeforest.net/item/wunderkind-one-page-parallax-theme/7601990" target="_newtab">Wunderkind</a></li>
+                            <li id="to-section"><a href="#konttakt">Contact</a></li>
+                            
+                            <li><a class="social-icon" href="#"><i class="icon icon-social-twitter"></i></a></li>
+                            <li><a class="social-icon" href="#"><i class="icon icon-social-facebook"></i></a></li>
+                            <li><a class="social-icon" href="#"><i class="icon icon-support"></i></a></li>
+                      </ul>
+                    </div> --><!-- /.navbar-collapse -->
+				</div><!-- /.container -->
+			</nav>
+		</header>
+        <!--End Header--> 
+ 
+        <section id="page-top" style="height:400px">
+        <div class="hero" id="doc-hero-overlay">
+        
+            <img src="img/backgrounds/bg-documentation.jpg" style="position:fixed;min-width: 100%;">
+
+            <div class="page-top-title text-center" style="top:160px;position:relative;z-index:1">
+                <h2 class="white op-1" style="font-size:60px;letter-spacing:2px;">Documentação</h2>
+                <p class="home-subheading op-1">MODELO MVC</p>
+            </div>
+            
+        </div>
+        </section> 
+        
+        <div class="site-wrapper content">
+        
+            <!-- Begin Body -->
+            <div class="container" style="padding-top:30px">
+                <div class="row">
+                    
+                    <!-- Side Menu -->
+                    <div class="col-md-3 side-menu" id="leftCol" style="z-index: 99;">
+                        <ul class="nav nav-stacked" id="sidebar" style="padding-top:40px;width:280px">
+                            <li><a href="#general">Informação Geral</a></li>
+                            <li><a href="#arquivo-index">O arquivo index.php</a></li>
+                            <li><a href="#arquivo-404">O arquivo 404.php</a></li>
+                            <li><a href="#arquivo-htaccess">O arquivo .htaccess</a></li>
+                            <li><a href="#pasta-control">A pasta control</a></li>
+                            <li><a href="#pasta-model">A pasta model</a></li>
+                            <li><a href="#pasta-views">A pasta views</a></li>
+                            <li><a href="#pasta-library">A pasta library</a></li>
+                        </ul>
+                    </div>  
+                
+                
+                    <div class="col-md-9" style="background: #fff">
+
+                        <!-- General Information -->
+                        <div class="col-lg-12" id="general" style="margin-bottom:20px; padding-top:20px;">
+                            <h2>Informação Geral</h2>
+                            <p>O modelo MVC utilizado possui o esquema de pastas a seguir:</p>
+
+                            <div class="box">
+                                <ul>
+                                    <li>
+                                        model (pasta)
+                                        <ul>
+                                            <li>Bean (pasta)</li>
+                                            <li>DAO (pasta)</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        views (pasta)
+                                        <ul>
+                                            <li>include (pasta)
+                                                <ul>
+                                                    <li>phpmailer</li>
+                                                    <li>codigos-php-paginas</li>
+                                                </ul>
+                                            </li>
+                                            <li>assets (pasta)
+                                                <ul>
+                                                    <li>css (pasta)</li>
+                                                    <li>js (pasta)</li>
+                                                    <li>images (pasta)</li>
+                                                </ul>
+                                            </li>
+                                            <li>404.php</li>
+                                            <li>index.php</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        control (pasta)
+                                    </li>
+                                    <li>
+                                        library (pasta)
+                                        <ul>
+                                            <li>data (pasta)</li>
+                                            <li>config (pasta)</li>
+                                        </ul>
+                                    </li>
+                                    <li>index.php</li>
+                                    <li>.htacess</li>
+                                </ul>
+                            </div>
+                            <p>Veja um site montado a partir do modelo MVC dessa documentação <span class="highlight"><a href="../">nesse link</a></span></p>
+                        </div>
+
+                         <!--HTML Structure-->
+                        <div class="col-lg-12" id="arquivo-index" style="margin-bottom:20px; padding-top:20px;">
+                            <h2>O arquivo index.php</h2>
+                            <p>
+
+                                É nesse arquivo que serão montadas todas as páginas do site. Ele possui uma lógica de inclusão dos arquivos que estão na pasta <span class="highlight">views</span>.
+                                <br>
+                                <br>
+                                A estrutura de montagem das páginas está representada no exemplo a seguir. Sendo que este deve ser montado seguindo a lógica de cada template que é utilizado para criar o site. Lembrando que o código PHP principal deve ser mantido inalterado para que não ocorra nenhum problema na inclusão dos arquivos de visualização. 
+                                <small>(O código abaixo segue o exemplo do site teste encontrato <span class="highlight"><a href="../">nesse link</a></span>)</small>
+
+                            </p>
+
+                            <div class="col-lg-12 highlight box">
+                                <img src="img/pagina-index.png" alt="">
+                            </div>
+                        </div>
+
+                        <!--HTML Structure-->
+                        <div class="col-lg-12" id="arquivo-404" style="margin-bottom:20px; padding-top:20px;">
+                            <h2>O arquivo 404.php</h2>
+                            <p>
+                                
+                                Esse arquivo contém o HTML da página de erro quando uma página que o usuário procura não é encontrada.  
+                                
+                            </p>
+
+                            <div class="col-lg-12 highlight box">
+                                <img src="" alt="">
+                            </div>
+                        </div>
+
+
+                         <!--CSS Structure-->
+                        <div class="col-lg-12" id="arquivo-htaccess" style="margin-bottom:20px; padding-top:20px">
+                            <h2>O arquivo .htaccess</h2>
+                            <p>
+                                Nesse arquivo colocamos redirecionamentos via HTTP, onde habilitamos a reescrita de URL, forçamos redirecionamento para HTTPS, adicionamos compressão GZIP, etc.
+                            </p>
+                            <div>
+                                <img src="" alt="">
+                            </div>
+
+                        </div>
+
+                         <!--Javascript-->
+                        <div class="col-lg-12" id="pasta-control" style="margin-bottom:20px; padding-top:0px">
+                            <h2>A pasta control</h2>
+                            <p>
+                               Esta pasta contém todos os arquivos PHP de controle da aplicação. 
+                            </p>
+                        </div>
+
+                         <!--Color Skins-->
+                        <div class="col-lg-12" id="pasta-model" style="margin-bottom:20px; padding-top:20px">
+                            <h2>A pasta model</h2>
+
+                            <p>
+                                Dentro desta pasta existem mais duas pastas: a pasta <span class="highlight">Bean</span> e a pasta <span class="highlight">DAO</span>. Dentro da pasta <span class="highlight">Bean</span> se encontram os arquivos PHP que contém as classes que serão utilizadas na aplicação.
+                                <br>
+                                Dentro da pasta <span class="highlight">DAO</span> ficam todos os arquivos PHP que controlam a lógica da aplicação.
+                            </p>
+
+                        </div>
+
+
+                         <!--Background-->
+                        <div class="col-lg-12" id="pasta-views" style="margin-bottom:20px; padding-top:20px">
+                            <h2>A pasta views</h2>
+                            <p>
+
+                                Nesta pasta se encontram todos os arquivos de visualização das páginas. Além disso, é aqui que colocamos os arquivos css, js e imagens. Esses três últimos citados se encontram dentro da pasta <span class="highlight">assets</span>.
+                                <br>
+                                Aqui se econtra outro arquivo <span class="highlight">index.php</span>, mas esse, por sua vez, representa a visualização da página principal do site (a home).
+                                <br>
+                                Aqui existe também a pasta <span class="highlight">include</span>. Dentro dela temos os arquivos de <span class="highlight">scripts</span>, do <span class="highlight">head</span>, do <span class="highlight">menu</span>, do <span class="highlight">footer</span> (rodapé), o arquivo <span class="highlight">config.php</span> e o arquivo <span class="highlight">controle_codigos_php_paginas.php</span> que carrega os códigos de manipulação de dados PHP das demais páginas.
+                            </p>
+                            <p>
+                                O arquivo <span class="highlight">scripts</span> contém a chamada de todos os scripts (arquivos .js) que serão utilizados nas páginas.
+                                <br>
+                                <br>
+                                O arquivo <span class="highlight">head</span> contém a chamada dos arquivos .css e outras tags de definição das páginas HTML como a tag description, author, etc.
+                                <br>
+                                <br>                                O arquivo <span class="highlight">menu</span> contém o HTML do menu principal do site.
+                                <br>
+                                <br>
+                                O arquivo <span class="highlight">footer</span> contém o HTML do rodapé do site.
+                                <br>
+                                <br>
+                                O arquivo <span class="highlight">config.php</span> contém o código que define o caminho da pasta onde estão os arquivos HTML de visualização e também cria a lógica de definição e captura das URL.
+                                <br>
+                                <br>
+                                O arquivo <span class="highlight">controle_codigos_php_paginas.php</span> contém a inclusão dos arquivos de manipulação PHP de cada página de acordo com a URL. Exemplo: na página contato.php (URL = contato) existe um fomulário onde os dados precisam ser capturados. Dentro do arquivo de controle de códigos PHP se captura a URL contato e se inclui o arquivo que possui a lógica para capturar os dados do formulário da página.
+                                <br>
+                                <br>
+                            </p>
+                            <p>
+                                Há também duas pastas: a <span class="highlight">codigos-php-paginas</span> e a do <span class="highlight">phpmailer</span>.
+                                <br>
+                                <br>
+                                Dentro da pasta <span class="highlight">codigos-php-paginas</span> estão os arquivos de manipulação PHP de cada página HTML. Estes contém os códigos que, por exemplo, capturam os dados ou executam um determinado comando de uma certa página.
+                                <br>
+                                <br>
+                                Dentro da pasta <span class="highlight">phpmailer</span> estão os arquivos PHP para enviar e-mail.
+                                <br>
+                                Contém os arquivos com as classes dos protocolos de envio de e-mail, um arquivo de autoload que chama o arquivo do protocolo utilizado para enviar e-mail e um arquivo de exemplo de envio de e-mail.
+                            </p>
+                        </div>    
+
+                        <!--Credits-->
+                        <div class="col-lg-12" id="pasta-library" style="margin-bottom:20px; padding-top:20px">
+                            <h2>A pasta library</h2>  
+                            <p>
+                                A pasta library contém o CRUD da aplicação e a configuração do banco de dados a ser utilizado.
+                                <br>
+                                <br>
+                                Aqui encotramos duas pastas: a pasta <span class="highlight">config</span> e a pasta <span class="highlight">data</span>.
+                                <br>
+                                <br>
+                                Dentro da pasta <span class="highlight">config</span> está o arquivo <span class="highlight">config.php</span>. Nele estão as constantes de configuração do banco de dados a ser utilizado.
+                                <br>
+                                <br>
+                                Dentro da pasta <span class="highlight">data</span> está o arquivo <span class="highlight">AcessoDados.php</span> e o arquivo <span class="highlight">DataBase.php</span>. No arquivo <span class="highlight">AcessoDados.php</span> temos a criação do CRUD com as funções de <span class="highlight">CREATE</span>, <span class="highlight">READ</span>, <span class="highlight">UPDATE</span> e <span class="highlight">DELETE</span> e da conexão com o banco de dados via PDO.
+                                <br>
+                                No arquivo <span class="highlight">DataBase.php</span> temos a criação do objeto <span class="highlight">db (data base)</span> que será utilizado nos métodos dos arquivos da pasta <span class="highlight">DAO</span> para inserir, atualizar, ler e exlcuir dados.
+                                <br>
+                                <br>
+                            </p>
+                        </div>
+
+                    </div> 
+                </div>
+            </div><!-- End Container -->
+        </div><!-- End Site Wrapper -->
+            
+            <!-- Start Footer 1 -->
+            <footer id="footer">
+        
+                
+				<div class="footer-copyright">
+					<div class="container">
+						<div class="row">
+								
+							<div class="col-md-6 col-sm-12">
+								<p>© 2015 Documentação MVC by <a href="https://proideas.com.br" target="_blank" class="logo">Proideas Agência Digital</a> Todos os direitos reservados. </p>
+							</div>
+						</div>
+					</div>
+				</div><!-- End Footer Copyright -->
+                
+			</footer>
+            <!-- End Footer 1 -->
+            
+            <!-- Start Back To Top -->
+            <a id="back-to-top"><i class="icon ion-chevron-up"></i></a>
+            <!-- End Back To Top -->
+
+        <!-- jQuery -->
+        <script src="js/plugins.js"></script> 
+        
+        <script type='text/javascript'>
+        
+            $(document).ready(function() {
+
+                $(".nav-stacked").sticky({topSpacing:55});
+
+                var $body   = $(document.body);
+                var navHeight = $('.navbar').outerHeight(true) + 80;
+
+                $body.scrollspy({
+                    target: '#leftCol',
+                    offset: navHeight
+                });
+
+                /* smooth scrolling sections */
+                $('a[href*=#]:not([href=#])').click(function() {
+                    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                      var target = $(this.hash);
+                      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                      if (target.length) {
+                        $('HTML,body').animate({
+                          scrollTop: target.offset().top - 50
+                        }, 1000);
+                        return false;
+                      }
+                    }
+                });
+
+            });
+            
+            
+            // Hero parallax
+            jQuery(document).ready(function() {
+    
+                $(window).scroll(function(e){
+                  parallax();
+                });
+
+                function parallax(){
+                  var scrolled = $(window).scrollTop();
+                  $('.hero').css('top',-(scrolled*0.0515)+'rem');
+                  $('.op-1,.op-2,.op-3').css('opacity',1-(scrolled*.00110)); 
+
+                }; 		
+
+            });
+            
+            /* ==============================================
+            Header Animation
+            =============================================== */
+
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 5){  
+                    $('nav').addClass("navbar-small");
+                }
+                else{
+                    $('nav').removeClass("navbar-small");
+                }
+            });
+            
+            /* ==============================================
+            Back to Top
+            =============================================== */
+
+            $(window).scroll(function(){
+                if($(window).scrollTop() > 400){
+                    $("#back-to-top").stop().animate({ bottom:'16px' },300,'easeInOutCubic'); 
+                } 
+                else{
+                    $("#back-to-top").stop().animate({ bottom:'-50px' },300,'easeInOutCubic'); 
+                }
+            });
+            $('#back-to-top,#to-top').click(function() {
+                $('HTML, body').animate({ scrollTop: 0}, 1000, 'easeInOutExpo');
+                return false;
+            });
+            
+        </script> 
+        
+	</body>
+</HTML>
