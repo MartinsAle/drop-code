@@ -1,0 +1,152 @@
+body {
+    padding-top: 40px;
+}
+
+header {
+    background: #0083cc;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+}
+
+header  .trigger-menu{color: white; font-size: 36px; position: absolute; left: 30px; top: 10px;}
+header  .btn-close{position: absolute;top: 0; left:0;  padding-bottom: 35px; width: 11.7%}
+header  .trigger-menu-close{color: white; font-size: 16px; position: absolute; right: 12px; top: 12px;}
+
+.nav-up {
+    top: -60px;
+}
+
+main {
+    height: auto;
+    padding-top: 40px;
+}
+
+footer { background: #333;}
+footer section div{text-align: center; padding: 20px 0; color:white;}
+footer section div a{color: #00a4ff;}
+/** { color: transparent}*/
+
+.uk-offcanvas-bar{
+	position: absolute;
+	top: 0; 
+	background-color: rgba(000,000,000,0.3);
+	width: 100%; 
+	height: 3000px;
+	/* overflow-y: scroll; */
+}		
+
+.uk-nav{
+	background-color: #333;
+	width: 10%;
+	height: calc(100% * 5);
+	list-style: none;
+	margin-top: 0;
+	margin-left: -1400px;
+	/* overflow-y: scroll; */
+}
+
+/* .uk-nav::-webkit-scrollbar
+{
+  width: 12px;  /* for vertical scrollbars */
+  height: 12px; /* for horizontal scrollbars */
+}
+
+.uk-nav::-webkit-scrollbar-track
+{
+  background: transparent;
+}
+
+.uk-nav::-webkit-scrollbar-thumb
+{
+  background: transparent;
+} */
+
+.uk-nav .li-wraper{padding-top: 30px}
+
+/* .offcanvas-3{overflow-x: auto; height: 100%;} */
+
+.uk-nav li a{list-style: none; color: #fff; text-decoration: none}
+
+.uk-nav li {color: #fff; padding: 15px  0}
+
+.uk-nav li ul{list-style: none; display: none}
+
+h2 > a {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+
+h2 > a:hover {
+  color: #000;
+}
+
+h2 > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+h2 > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+@media all and (min-width: 240px) and (max-width: 320px) {
+	header{height: 60px !important;}
+	header .trigger-menu, .trigger-menu-close{top: 10px;}
+	.uk-offcanvas-bar{background-color: rgba(000,000,000,0.3); top: 0;}
+	.uk-nav{width: 30%; margin-top: 0; height: 533px; overflow-y: scroll !important}
+	.uk-nav li{padding-left: 0;}
+	header  .btn-close{position: absolute;top: 0; left:0;  padding-bottom: 35px; width: 43%;}
+}
+
+@media all and (min-width: 321px) and (max-width: 479px) {
+	header{height: 60px !important;}
+	header .trigger-menu, .trigger-menu-close{top: 10px;}
+	.uk-offcanvas-bar{background-color: rgba(000,000,000,0.3); top: 0;}
+	.uk-nav{width: 30%; margin-top: 0; height: calc(100% * 1); overflow-y: scroll !important}
+	.uk-nav li{padding-left: 0;}
+	header  .btn-close{position: absolute;top: 0; left:0;  padding-bottom: 35px; width: 40%;}
+}
+
+@media all and (min-width: 480px) and (max-width: 767px) {
+	header{height: 60px !important;}
+	header .trigger-menu, .trigger-menu-close{top: 10px;}
+	.uk-offcanvas-bar{background-color: rgba(000,000,000,0.3); top: 0;}
+	.uk-nav{width: 30%; margin-top: 0; height: calc(100% * 0.12); overflow-y: scroll !important; padding-bottom: 50px}
+	.uk-nav li{padding-left: 0;}
+	header  .btn-close{position: absolute;top: 0; left:0;  padding-bottom: 35px; width: 36%;}
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+	header{height: 60px !important;}
+	header .trigger-menu, .trigger-menu-close{top: 10px;}
+	.uk-offcanvas-bar{background-color: rgba(000,000,000,0.3); top: 0;}
+	.uk-nav{width: 30%; margin-top: 0; height: calc(100% * 0.130); overflow-y: scroll !important}
+	.uk-nav li{padding-left: 0;}
+	header  .btn-close{position: absolute;top: 0; left:0;  padding-bottom: 35px; width: 34%;}
+}
+
+@media all and (min-width: 992px) and (max-width: 1062px){
+	header{height: 60px !important;}
+	header .trigger-menu, .trigger-menu-close{top: 10px;}
+	.uk-offcanvas-bar{background-color: rgba(000,000,000,0.3); top: 0;}
+	.uk-nav{width: 30%; margin-top: 0; height: 1062px; overflow-y: scroll !important}
+	.uk-nav li{padding-left: 0;}
+	header  .btn-close{position: absolute;top: 0; left:0;  padding-bottom: 35px; width: 34%;}
+} 
