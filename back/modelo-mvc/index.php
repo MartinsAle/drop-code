@@ -3,7 +3,7 @@
     // INCLUI O ARQUIVO DE CONFIGURAÇÃO DE REQUISIÇÃO DA PASTA VIEW
     require_once('views/include/config.php');
     // INCLUI O ARQUIVO DE CONTROLE DE CÓDIGOS PHP DE CADA PÁGINA, EXEMPLO: ARQUIVO DE CADASTRO DE CLIENTES
-    require_once('views/include/controle_codigos_php_paginas.php');
+    require_once('views/include/controle-codigos-php-paginas.php');
 ?>
 <!doctype html>
 <html lang="pt-BR">
