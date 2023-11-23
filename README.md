@@ -1,2 +1,2 @@
 # drop-code
-alguns códigos ai que podem ser úteis
+alguns códigos que podem ser úteis no dia a dia
